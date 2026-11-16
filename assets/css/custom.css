@@ -1,0 +1,802 @@
+/* LD9 – svetainės tipografija, komponentai ir išdėstymas */
+:root {
+  --default-font: "Segoe UI", Arial, sans-serif;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --nav-font: "Segoe UI", Arial, sans-serif;
+  --background-color: #f6f8fb;
+  --default-color: #34445b;
+  --heading-color: #152d4b;
+  --accent-color: #176a83;
+  --nav-hover-color: #176a83;
+  --surface-color: #fff;
+}
+body {
+  font-family: var(--default-font);
+  font-size: 16px;
+  line-height: 1.65;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: #152d4b;
+  font-weight: 700;
+  line-height: 1.25;
+}
+h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  letter-spacing: -2px;
+}
+h2 {
+  font-size: 2.35rem;
+}
+h3 {
+  font-size: 1.45rem;
+}
+h4 {
+  font-size: 1.18rem;
+}
+h5 {
+  font-size: 1.02rem;
+}
+h6 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #34445b;
+}
+a {
+  color: #11647b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: #0c4050;
+  text-decoration: underline;
+}
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #176a83;
+  color: #fff;
+  border: 2px solid #176a83;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.action-btn:hover {
+  background: #0d465a;
+  border-color: #0d465a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px #17465830;
+  text-decoration: none;
+}
+.action-btn:active {
+  transform: translateY(1px);
+  background: #082e3d;
+}
+.action-btn:disabled {
+  background: #c9d4df;
+  border-color: #c9d4df;
+  color: #3c4f61;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.secondary-btn {
+  background: white;
+  color: #176a83;
+}
+.action-btn:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e3a443;
+  outline-offset: 3px;
+}
+.section {
+  padding: 76px 0;
+}
+#about,
+#resume,
+#portfolio {
+  padding: 86px 0;
+  margin-bottom: 12px;
+}
+.section-title {
+  padding-bottom: 32px;
+}
+.section-title h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #152d4b;
+  letter-spacing: -0.4px;
+}
+.section-title p {
+  color: #4f6279;
+}
+.content-panel,
+.about-card,
+.skill-panel,
+.resume .container:not(.section-title),
+.project-card,
+.xp-panel {
+  background: white;
+  border: 1px solid #d8e3ed;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px #203c5a0b;
+}
+.about-card {
+  padding: 30px;
+}
+.profile-photo {
+  border-radius: 18px;
+  width: 100%;
+  height: auto;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 28px #203c5a22;
+}
+.resume .resume-item {
+  border-color: #176a83;
+  padding-left: 23px;
+}
+.resume .resume-item::before {
+  border-color: #176a83;
+}
+.resume .resume-item h4 {
+  color: #176a83;
+  font-family: var(--heading-font);
+  font-size: 1.15rem;
+}
+.resume .resume-item h5 {
+  background: #e6f2f5;
+  color: #15455c;
+}
+.project-card {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-details {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.project-details h3 {
+  font-size: 1.27rem;
+}
+.project-link {
+  margin-top: auto;
+  font-weight: 650;
+}
+.hero:before {
+  background: linear-gradient(90deg, #eef7fcf5, #e6f1f2bd 60%, #e6f1f285);
+}
+.hero h1 {
+  margin: 0;
+}
+.hero .hero-subtitle {
+  font-size: clamp(1.15rem, 3vw, 1.7rem);
+  margin-top: 10px;
+}
+.hero .social-links a {
+  color: #176a83;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.hero-cta {
+  margin-top: 25px;
+}
+.footer {
+  background: #e5edf4;
+}
+.footer p {
+  font-style: normal;
+}
+.footer .social-links a {
+  background: #176a83;
+}
+
+/* LD9 – du atskiri komponentai: navigacija ir įgūdžių progreso juostos */
+.navmenu a,
+.navmenu a:focus {
+  background: #e4edf4;
+  border: 1px solid #c6d8e5;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px #233e5610;
+  margin-bottom: 10px;
+  color: #244560;
+  text-decoration: none;
+}
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover > a {
+  color: white;
+  background: #176a83;
+  border-color: #176a83;
+  text-decoration: none;
+}
+.navmenu ul {
+  width: 180px;
+}
+.navmenu a:hover,
+.navmenu a:focus-visible {
+  max-width: 100%;
+}
+.navmenu a:focus-visible span {
+  display: block;
+}
+@media (max-width: 1199px) {
+  .navmenu ul {
+    width: 100%;
+  }
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 100%;
+  }
+  .navmenu a span,
+  .navmenu a:focus span {
+    display: block;
+  }
+}
+.skills .progress-bar-wrap {
+  height: 13px;
+  background: #e0e9f0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #d0dfe9;
+}
+.skills .progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #176a83, #4ab8b1);
+  box-shadow: 0 2px 5px #176a8355;
+}
+.skills .progress {
+  margin-bottom: 12px;
+}
+.skill-panel {
+  margin: 0;
+}
+
+/* LD9 papildoma – sąrašų pseudo-elementai, skaitiklis ir lentelė */
+.technology-list,
+.steps-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.technology-list > li,
+.steps-list > li {
+  position: relative;
+  padding: 10px 10px 10px 38px;
+  margin: 5px 0;
+}
+.technology-list > li::before {
+  content: "✓";
+  position: absolute;
+  left: 8px;
+  color: #176a83;
+  font-weight: bold;
+}
+.technology-list ul {
+  list-style: square;
+  padding: 6px 0 6px 22px;
+  color: #527082;
+  border-left: 2px solid #b4d9dd;
+  margin: 8px 0 0;
+  font-size: 0.94rem;
+}
+.steps-list {
+  counter-reset: step;
+}
+.steps-list > li {
+  counter-increment: step;
+  background: #eff6f8;
+  border-radius: 8px;
+}
+.steps-list > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #176a83;
+  color: white;
+  text-align: center;
+  line-height: 23px;
+  font-weight: bold;
+}
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #cedde6;
+}
+.service-table th,
+.service-table td {
+  padding: 13px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #cedde6;
+}
+.service-table thead th {
+  background: #153e56;
+  color: #fff;
+  font-weight: 700;
+}
+.service-table tbody tr:nth-child(even) {
+  background: #e8f3f6;
+}
+.service-table tbody tr:hover {
+  background: #cce7ed;
+}
+.service-table td:first-child {
+  font-weight: 650;
+}
+.services video,
+.services iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 0;
+  border-radius: 12px;
+  background: #152d4b;
+}
+.services audio {
+  width: 100%;
+  max-width: 520px;
+}
+.media-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.media-heading p {
+  margin: 0;
+}
+
+/* LD10 – naujos animacijos */
+@keyframes icon-dance {
+  0% {
+    transform: translateY(0) scale(1);
+    color: #176a83;
+  }
+  30% {
+    transform: translateY(-5px) scale(1.12);
+    color: #267c90;
+  }
+  60% {
+    transform: translateY(3px) scale(0.95);
+    color: #163d61;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    color: #176a83;
+  }
+}
+@keyframes soft-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 #176a831f;
+  }
+  50% {
+    box-shadow: 0 0 0 9px #176a8310;
+  }
+}
+.hero .social-links a {
+  animation: icon-dance 3.5s ease-in-out infinite;
+}
+.hero .social-links a:nth-child(2) {
+  animation-delay: 0.35s;
+}
+.hero .social-links a:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.hero-cta {
+  animation: soft-glow 3s ease-in-out infinite;
+}
+@keyframes spinner-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border: 4px solid #d1e7ed;
+  border-top-color: #176a83;
+  border-radius: 50%;
+  animation: spinner-turn 1s linear infinite;
+}
+@keyframes rule-shift {
+  0%,
+  100% {
+    transform: scaleX(0.75);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleX(1.15);
+    opacity: 1;
+  }
+}
+@keyframes rule-slide {
+  0%,
+  100% {
+    transform: translateX(-35px);
+  }
+  50% {
+    transform: translateX(35px);
+  }
+}
+.section-title h2::before {
+  content: "";
+  width: 130px;
+  height: 2px;
+  background: #aecedb;
+  bottom: 0;
+  animation: rule-shift 3s ease-in-out infinite;
+  border-radius: 3px;
+}
+.section-title h2::after {
+  content: "";
+  width: 36px;
+  height: 4px;
+  background: #176a83;
+  bottom: -1px;
+  border-radius: 6px;
+  animation: rule-slide 3s ease-in-out infinite;
+}
+/* LD10 papildoma – gradientas ir dvi CSS figūros */
+@keyframes gradient-motion {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+#services {
+  background: linear-gradient(120deg, #e6f4f7, #f0ebfa, #d6ebef, #f6f8fb);
+  background-size: 320% 320%;
+  animation: gradient-motion 14s ease infinite;
+}
+#about {
+  position: relative;
+  isolation: isolate;
+}
+#about > .container {
+  position: relative;
+  z-index: 1;
+}
+.shape {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.25;
+}
+.shape-circle {
+  width: 110px;
+  height: 110px;
+  border: 12px solid #7dc5d1;
+  border-radius: 50%;
+  top: 22px;
+  right: 6%;
+  animation: shape-float 5s ease-in-out infinite;
+}
+.shape-triangle {
+  width: 0;
+  height: 0;
+  border-left: 46px solid transparent;
+  border-right: 46px solid transparent;
+  border-bottom: 82px solid #b69edb;
+  bottom: 24px;
+  left: 4%;
+  animation: shape-spin 9s linear infinite;
+}
+@keyframes shape-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(15px) scale(1.12);
+  }
+}
+@keyframes shape-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* LD11 – kontaktų forma */
+#contact-form label {
+  display: block;
+  font-weight: 650;
+  color: #152d4b;
+  margin-bottom: 6px;
+}
+#contact-form .form-control {
+  border: 1px solid #a9bdcb;
+  border-radius: 8px;
+  min-height: 45px;
+  padding: 10px;
+  color: #233a50;
+}
+#contact-form .form-control:focus {
+  border-color: #176a83;
+  box-shadow: 0 0 0 3px #176a8325;
+}
+#contact-form .invalid {
+  border-color: #be263b;
+  background: #fff3f4;
+}
+.field-error {
+  display: block;
+  color: #a0142c;
+  font-size: 0.82rem;
+  min-height: 1.2em;
+}
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.form-result {
+  border-left: 4px solid #176a83;
+  margin-top: 22px;
+  padding: 18px;
+  background: #eaf5f6;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+.form-result p {
+  margin-bottom: 4px;
+}
+#rating-average {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #15455c;
+}
+
+/* LD12 – kompetencijų pažangos modulis */
+.xp-panel {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  background: linear-gradient(120deg, #102e46, #176a83);
+  color: #fff;
+  border: 0;
+}
+#level-avatar {
+  flex-shrink: 0;
+  width: 122px;
+  height: 122px;
+  object-fit: contain;
+  background: #ffffff23;
+  border-radius: 50%;
+}
+.xp-info {
+  flex: 1;
+  min-width: 0;
+}
+.xp-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+.xp-label strong {
+  background: #ffffff26;
+  padding: 4px 13px;
+  border-radius: 20px;
+}
+.xp-panel h3 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.xp-panel p {
+  color: #e9f7fa;
+  margin: 9px 0 0;
+}
+.xp-track {
+  height: 14px;
+  border-radius: 20px;
+  background: #ffffff38;
+  overflow: hidden;
+}
+#xp-fill {
+  height: 100%;
+  background: #ffcf7c;
+  border-radius: 20px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+.stats-grid,
+.kanban-board,
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.stats-grid > div {
+  padding: 17px;
+  text-align: center;
+  background: white;
+  border: 1px solid #d8e3ed;
+  border-radius: 12px;
+}
+.stats-grid span {
+  display: block;
+  font-size: 0.88rem;
+}
+.stats-grid strong {
+  display: block;
+  color: #176a83;
+  font-size: 1.6rem;
+}
+.kanban-column {
+  padding: 14px;
+  border: 1px solid #d8e3ed;
+  background: #eaf0f6;
+  border-radius: 14px;
+  min-height: 240px;
+}
+.kanban-column h3 {
+  font-size: 1.15rem;
+  padding: 7px 8px 12px;
+  margin: 0;
+}
+.kanban-column.planned {
+  border-top: 4px solid #7c8da3;
+}
+.kanban-column.learning {
+  border-top: 4px solid #cc841c;
+}
+.kanban-column.completed {
+  border-top: 4px solid #239486;
+}
+.kanban-cards {
+  display: grid;
+  gap: 10px;
+}
+.skill-card {
+  background: white;
+  padding: 13px;
+  border: 1px solid #d4e2ec;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px #203c5a0b;
+}
+.skill-card h4 {
+  font: 650 1rem var(--default-font);
+  margin: 0 0 5px;
+}
+.skill-card .xp-badge {
+  display: block;
+  color: #176a83;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skill-card select {
+  width: 100%;
+  border: 1px solid #9fb8c7;
+  border-radius: 6px;
+  padding: 6px;
+  background: #fff;
+  color: #243b51;
+}
+.achievement {
+  border: 1px solid #cdd9e3;
+  border-radius: 12px;
+  padding: 18px;
+  background: #edf1f5;
+  color: #4c5c70;
+}
+.achievement i {
+  font-size: 1.8rem;
+  color: #6b7d90;
+}
+.achievement h4 {
+  margin-top: 9px;
+}
+.achievement p {
+  font-size: 0.93rem;
+  margin-bottom: 5px;
+}
+.achievement .achievement-state {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.achievement.unlocked {
+  border: 2px solid #2d9484;
+  background: #e6f6ef;
+  color: #17664d;
+}
+.achievement.unlocked i {
+  color: #16806b;
+}
+@media (max-width: 767px) {
+  .section,
+  #about,
+  #resume,
+  #portfolio {
+    padding: 52px 0;
+  }
+  .content-panel,
+  .about-card,
+  .resume .container:not(.section-title) {
+    padding: 17px;
+  }
+  .xp-panel {
+    gap: 15px;
+    padding: 18px;
+  }
+  #level-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .kanban-board,
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    gap: 7px;
+  }
+  .stats-grid > div {
+    padding: 9px 4px;
+  }
+  .stats-grid span {
+    font-size: 0.75rem;
+  }
+  .service-table th,
+  .service-table td {
+    padding: 8px;
+    font-size: 0.86rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .social-links a,
+  .hero-cta,
+  .loading-spinner,
+  .section-title h2::before,
+  .section-title h2::after,
+  #services,
+  .shape {
+    animation: none;
+  }
+}

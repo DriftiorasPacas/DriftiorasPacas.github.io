@@ -1,612 +1,955 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mano CV</title>
+    <meta name="author" content="Rokas Būga" />
+    <meta name="description" content="Rokas Būga CV puslapis" />
+    <meta name="keywords" content="CV, programavimas, IT" />
 
-  <title>Mano CV</title>
-  <meta name="author" content="Rokas Būga">
-  <meta name="description" content="Rokas Būga CV puslapis">
-  <meta name="keywords" content="CV, programavimas, IT">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: MyResume
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
   * Updated: Jun 29 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="index-page">
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex flex-column justify-content-center"
+    >
+      <i
+        class="header-toggle d-xl-none bi bi-list"
+        aria-label="Atverti navigaciją"
+      ></i>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" aria-label="Pagrindinis" class="active"
+              ><i class="bi bi-house navicon"></i><span>Pagrindinis</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" aria-label="Apie mane"
+              ><i class="bi bi-person navicon"></i><span>Apie mane</span></a
+            >
+          </li>
+          <li>
+            <a href="#resume" aria-label="Patirtis"
+              ><i class="bi bi-file-earmark-text navicon"></i
+              ><span>Patirtis</span></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" aria-label="Atlikti darbai"
+              ><i class="bi bi-images navicon"></i
+              ><span>Atlikti darbai</span></a
+            >
+          </li>
+          <li>
+            <a href="#services" aria-label="Paslaugos"
+              ><i class="bi bi-hdd-stack navicon"></i><span>Paslaugos</span></a
+            >
+          </li>
+          <li>
+            <a href="#competence" aria-label="Kompetencijų pažanga"
+              ><i class="bi bi-trophy navicon"></i><span>Pažanga</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" aria-label="Kontaktai"
+              ><i class="bi bi-envelope navicon"></i><span>Kontaktai</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section light-background">
+        <img
+          src="assets/img/programavimas.jpg"
+          alt="Programavimo darbo vieta"
+        />
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Pagrindinis</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>Apie mane</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Patirtis</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Projektai</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Paslaugos</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Kontaktai</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/programavimas.jpg" alt="Programavimo darbo vieta">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Rokas Būga</h2>
-            <p>Esu <span class="typed" data-typed-items="Programuotojas, IT specialistas">Programuotojas</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <h1>Rokas Būga</h1>
+              <p class="hero-subtitle">
+                Esu
+                <span
+                  class="typed"
+                  data-typed-items="Programuotojas, IT specialistas"
+                  >Programuotojas</span
+                ><span
+                  class="typed-cursor-placeholder"
+                  aria-hidden="true"
+                ></span>
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/DriftiorasPacas"
+                  aria-label="Mano GitHub"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a href="#portfolio" aria-label="Mano atlikti darbai"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+                <a href="#contact" aria-label="Kontaktai"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+              </div>
+              <a class="action-btn hero-cta" href="#about"
+                >Susipažinkime <i class="bi bi-arrow-down"></i
+              ></a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- /Hero Section -->
 
-    </section><!-- /Hero Section -->
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="shape shape-circle" aria-hidden="true"></div>
+        <div class="shape shape-triangle" aria-hidden="true"></div>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Apie mane</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Mano nuotrauka">
-          </div>
-          
-<div class="col-lg-8 content">
-  <h2>Programuotojas ir IT specialistas</h2>
-
-  <p class="fst-italic py-3">
-    Esu informacinių technologijų studentas,
-    besidomintis programavimu, kompiuteriais
-    ir interneto svetainių kūrimu.
-  </p>
-
-  <div class="row">
-    <div class="col-lg-6">
-      <ul>
-        <li>
-          <i class="bi bi-chevron-right"></i>
-          <strong>Miestas:</strong>
-          <span>Vilnius</span>
-        </li>
-        <li>
-          <i class="bi bi-chevron-right"></i>
-          <strong>Sritis:</strong>
-          <span>Informacinės technologijos</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-lg-6">
-      <ul>
-        <li>
-          <i class="bi bi-chevron-right"></i>
-          <strong>Išsilavinimas:</strong>
-          <span>Studentas</span>
-        </li>
-        <li>
-          <i class="bi bi-chevron-right"></i>
-          <strong>Įgūdžiai:</strong>
-          <span>C++, Python, HTML</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <p class="py-3">
-    Domiuosi programinės įrangos kūrimu,
-    nuolat tobulinu savo programavimo įgūdžius.
-    Mano tikslas – įgyti daugiau praktinės
-    patirties IT srityje.
-  </p>
-</div>
-
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Apie mane</h2>
+          <p>Dirbtinio intelekto sistemų studentas.</p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/profile-img.jpg"
+                class="img-fluid profile-photo"
+                alt="Roko Būgos profilio nuotrauka"
+              />
             </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-broadcast"></i>
+            <div class="col-lg-8 content about-card">
+              <h2>Programuotojas ir IT specialistas</h2>
+
+              <p class="fst-italic py-3">
+                Esu informacinių technologijų studentas, besidomintis
+                programavimu, kompiuteriais ir interneto svetainių kūrimu.
+              </p>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Miestas:</strong>
+                      <span>Vilnius</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Sritis:</strong>
+                      <span>Informacinės technologijos</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Išsilavinimas:</strong>
+                      <span>Studentas</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Įgūdžiai:</strong>
+                      <span>C++, Python, HTML</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
+              <p class="py-3">
+                Domiuosi programinės įrangos kūrimu, nuolat tobulinu savo
+                programavimo įgūdžius. Mano tikslas – įgyti daugiau praktinės
+                patirties IT srityje.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container section-title">
+          <h2>Įgūdžiai</h2>
+          <p>Savarankiškas įgūdžių įsivertinimas studijų metu.</p>
+        </div>
+        <div class="container">
+          <div class="row gy-4 skills-animation skill-panel">
+            <div class="col-md-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>HTML</span><i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="HTML"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <div class="progress">
+                <span class="skill"
+                  ><span>CSS</span><i class="val">60%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="CSS"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"
+                  ><span>JavaScript</span><i class="val">50%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="JavaScript"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
             </div>
-          </div><!-- End Service Item -->
+            <div class="col-md-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>C++</span><i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="C++"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"
+                  ><span>MATLAB</span><i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="MATLAB"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"
+                  ><span>SQL</span><i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="SQL"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
 
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <div class="container section-title">
+          <h2>Patirtis</h2>
+          <p>Mano išsilavinimas ir praktinė patirtis.</p>
         </div>
 
-      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Išsilavinimas</h3>
 
-    </section><!-- /Services Section -->
+              <div class="resume-item">
+                <h4>Dirbtinio intelekto sistemos</h4>
+                <h5>2025 – dabar</h5>
+                <p><em>VILNIUS TECH</em></p>
+                <p>
+                  Studijuoju programavimą, dirbtinį intelektą ir informacines
+                  technologijas.
+                </p>
+              </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+              <div class="resume-item">
+                <h4>Vidurinis išsilavinimas</h4>
+                <h5>Iki 2025</h5>
+                <p>Įgijau vidurinį išsilavinimą.</p>
+              </div>
+            </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
+            <div class="col-lg-6">
+              <h3 class="resume-title">Praktinė patirtis</h3>
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+              <div class="resume-item">
+                <h4>Programavimo projektai</h4>
+                <h5>2025 – dabar</h5>
+                <p>Atlieku universitetinius programavimo darbus.</p>
+                <ul>
+                  <li>C++ ir Python programavimas</li>
+                  <li>Duomenų analizė su MATLAB</li>
+                  <li>Darbas su SQL duomenų bazėmis</li>
+                </ul>
+              </div>
 
-        <div class="row gy-4">
+              <div class="resume-item">
+                <h4>Interneto svetainių kūrimas</h4>
+                <h5>2026</h5>
+                <p>
+                  Asmeninės CV svetainės kūrimas naudojant HTML, CSS ir GitHub
+                  Pages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title">
+          <h2>Atlikti darbai</h2>
+          <p>MATLAB laboratorinių darbų grafikai.</p>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+              <article class="project-card">
+                <a
+                  href="assets/img/matlab-eksponentines.png"
+                  class="glightbox"
+                  data-gallery="matlab"
+                  data-title="Eksponentinės funkcijos"
+                >
+                  <img
+                    src="assets/img/matlab-eksponentines.png"
+                    class="img-fluid"
+                    alt="MATLAB eksponentinių funkcijų grafikas"
+                  />
+                </a>
+                <div class="project-details">
+                  <h3>Eksponentinės funkcijos</h3>
+                  <p>
+                    Trijų eksponentinių funkcijų eˣ, e³ˣ ir e⁵ˣ palyginimas.
+                  </p>
+                  <a
+                    href="assets/img/matlab-eksponentines.png"
+                    class="glightbox project-link"
+                    data-gallery="matlab-details"
+                    data-title="Eksponentinės funkcijos"
+                    >Padidinti grafiką <i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="project-card">
+                <a
+                  href="assets/img/matlab-egzaminai.png"
+                  class="glightbox"
+                  data-gallery="matlab"
+                  data-title="Studentų egzaminų rezultatai"
+                >
+                  <img
+                    src="assets/img/matlab-egzaminai.png"
+                    class="img-fluid"
+                    alt="MATLAB studentų egzaminų rezultatų stulpelinės diagramos"
+                  />
+                </a>
+                <div class="project-details">
+                  <h3>Studentų egzaminų rezultatai</h3>
+                  <p>
+                    Grupuotos ir sudėtinės stulpelinės diagramos, palyginančios
+                    keturių egzaminų rezultatus.
+                  </p>
+                  <a
+                    href="assets/img/matlab-egzaminai.png"
+                    class="glightbox project-link"
+                    data-gallery="matlab-details"
+                    data-title="Studentų egzaminų rezultatai"
+                    >Padidinti grafiką <i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="project-card">
+                <a
+                  href="assets/img/matlab-signalas.png"
+                  class="glightbox"
+                  data-gallery="matlab"
+                  data-title="Signalo filtravimas"
+                >
+                  <img
+                    src="assets/img/matlab-signalas.png"
+                    class="img-fluid"
+                    alt="MATLAB signalo filtravimo ir ribinių įtampos reikšmių grafikai"
+                  />
+                </a>
+                <div class="project-details">
+                  <h3>Signalo filtravimas</h3>
+                  <p>
+                    Pradinio ir filtruoto signalo palyginimas, ribinių ir
+                    ekstremalių reikšmių atvaizdavimas.
+                  </p>
+                  <a
+                    href="assets/img/matlab-signalas.png"
+                    class="glightbox project-link"
+                    data-gallery="matlab-details"
+                    data-title="Signalo filtravimas"
+                    >Padidinti grafiką <i class="bi bi-arrows-angle-expand"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <div class="container section-title">
+          <h2>Paslaugos</h2>
+          <p>Programavimas, svetainės ir duomenų analizė.</p>
+        </div>
+        <div class="container">
+          <div class="content-panel">
+            <h3>Paslaugų kainos</h3>
+            <p>Orientaciniai paslaugų pavyzdžiai.</p>
+            <div class="table-responsive">
+              <table class="service-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Paslauga</th>
+                    <th scope="col">Aprašymas</th>
+                    <th scope="col">Kaina</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Svetainių kūrimas</td>
+                    <td>Asmeninių interneto svetainių kūrimas</td>
+                    <td>100 Eur</td>
+                  </tr>
+                  <tr>
+                    <td>Duomenų analizė</td>
+                    <td>Duomenų analizė ir grafikai MATLAB aplinkoje</td>
+                    <td>50 Eur</td>
+                  </tr>
+                  <tr>
+                    <td>Programavimas</td>
+                    <td>Paprastų C++ ir Python programų kūrimas</td>
+                    <td>80 Eur</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row gy-4 mt-1">
+            <div class="col-md-6">
+              <div class="content-panel h-100">
+                <h3>Naudojamos technologijos</h3>
+                <ul class="technology-list">
+                  <li>HTML ir CSS</li>
+                  <li>MATLAB</li>
+                  <li>
+                    Programavimo kalbos
+                    <ul>
+                      <li>C++</li>
+                      <li>Python</li>
+                    </ul>
+                  </li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="content-panel h-100">
+                <h3>Svetainės kūrimo etapai</h3>
+                <ol class="steps-list">
+                  <li>Poreikių išsiaiškinimas</li>
+                  <li>Dizaino kūrimas</li>
+                  <li>Programavimas</li>
+                  <li>Testavimas ir paskelbimas</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="content-panel mt-4">
+            <div class="media-heading">
+              <div class="loading-spinner" aria-hidden="true"></div>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Medijos įrašai</h3>
+                <p>Programavimo ir darbo aplinkos pavyzdžiai.</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <h4>Programavimas kompiuteriu</h4>
+                <video controls preload="metadata">
+                  <source src="assets/media/video.mp4" type="video/mp4" />
+                  Naršyklė nepalaiko vaizdo įrašo.
+                </video>
+                <a
+                  href="https://www.pexels.com/video/person-is-typing-using-computer-keyboard-7534244/"
+                  >Vaizdo šaltinis: Pexels</a
+                >
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+              <div class="col-lg-6">
+                <h4>YouTube vaizdo įrašas</h4>
+                <iframe
+                  src="https://www.youtube.com/embed/BoUVIhtqjAw"
+                  title="YouTube vaizdo įrašas"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+                <a href="https://www.youtube.com/watch?v=BoUVIhtqjAw"
+                  >Peržiūrėti YouTube</a
+                >
               </div>
-            </div><!-- End Info Item -->
-
+              <div class="col-12">
+                <h4>Laikrodžio tiksėjimas</h4>
+                <audio controls preload="metadata">
+                  <source src="assets/media/audio.mp3" type="audio/mpeg" />
+                  Naršyklė nepalaiko garso įrašo.
+                </audio>
+                <p>
+                  <a
+                    href="https://pixabay.com/sound-effects/quartz-clock-ticking-one-minute-253102/"
+                    >Garso šaltinis: Pixabay</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
+      <!-- LD12: kompetencijų pažanga -->
+      <section id="competence" class="section competence">
+        <div class="container section-title">
+          <h2>Kompetencijų pažanga</h2>
+          <p>Keisk įgūdžių būsenas, rink XP ir atrakink pasiekimus.</p>
+        </div>
+        <div class="container">
+          <div class="xp-panel">
+            <img
+              id="level-avatar"
+              src="assets/img/level-1.svg"
+              alt="1 lygio personažas"
+            />
+            <div class="xp-info">
+              <div class="xp-label">
+                <span id="rank">Pradedantysis</span
+                ><strong id="level">1 lygis</strong>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+              <h3 id="xp-total">0 XP</h3>
+              <div
+                class="xp-track"
+                id="xp-track"
+                role="progressbar"
+                aria-label="Pažanga iki kito lygio"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <div id="xp-fill"></div>
+              </div>
+              <p id="xp-progress">0% iki kito lygio</p>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <div>
+              <span>Bendras įgūdžių skaičius</span
+              ><strong id="skill-count">0</strong>
+            </div>
+            <div>
+              <span>Atlikti įgūdžiai</span><strong id="done-count">0</strong>
+            </div>
+            <div>
+              <span>Atlikta procentais</span
+              ><strong id="done-percent">0%</strong>
+            </div>
+          </div>
+          <div class="kanban-board">
+            <div class="kanban-column planned">
+              <h3>Planuojama</h3>
+              <div id="planned-cards" class="kanban-cards"></div>
+            </div>
+            <div class="kanban-column learning">
+              <h3>Mokomasi</h3>
+              <div id="learning-cards" class="kanban-cards"></div>
+            </div>
+            <div class="kanban-column completed">
+              <h3>Atlikta</h3>
+              <div id="completed-cards" class="kanban-cards"></div>
+            </div>
+          </div>
+          <h3 class="mt-4">Pasiekimai</h3>
+          <div class="achievement-grid" id="achievements"></div>
         </div>
+      </section>
 
-      </div>
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container section-title">
+          <h2>Kontaktai</h2>
+          <p>Įvertinkite mano CV svetainę.</p>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div class="content-panel">
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Miestas</h3>
+                    <p>Vilnius, Lietuva</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="bi bi-github flex-shrink-0"></i>
+                  <div>
+                    <h3>GitHub</h3>
+                    <p>
+                      <a href="https://github.com/DriftiorasPacas"
+                        >DriftiorasPacas</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Forma skirta demonstraciniam svetainės vertinimui. Duomenys
+                  rodomi tik šiame puslapyje ir naršyklės konsolėje.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="content-panel">
+                <h3>Vertinimo forma</h3>
+                <form id="contact-form" novalidate>
+                  <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label for="firstName">Vardas</label>
+                      <input
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        type="text"
+                        autocomplete="given-name"
+                        required
+                        aria-describedby="firstName-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="firstName-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastName">Pavardė</label>
+                      <input
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        type="text"
+                        autocomplete="family-name"
+                        required
+                        aria-describedby="lastName-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="lastName-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email">El. paštas</label>
+                      <input
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        aria-describedby="email-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="email-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phone">Telefono numeris</label>
+                      <input
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        autocomplete="tel"
+                        required
+                        inputmode="numeric"
+                        placeholder="+370 6xx xxxxx"
+                        maxlength="15"
+                        aria-describedby="phone-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="phone-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-12">
+                      <label for="address">Adresas</label>
+                      <input
+                        class="form-control"
+                        id="address"
+                        name="address"
+                        type="text"
+                        autocomplete="street-address"
+                        required
+                        aria-describedby="address-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="address-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="design"
+                        >Kaip vertinate svetainės dizainą?</label
+                      >
+                      <input
+                        class="form-control"
+                        type="number"
+                        id="design"
+                        name="design"
+                        min="1"
+                        max="10"
+                        step="1"
+                        placeholder="1–10"
+                        required
+                        aria-describedby="design-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="design-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="usability"
+                        >Kaip vertinate svetainės patogumą?</label
+                      >
+                      <input
+                        class="form-control"
+                        type="number"
+                        id="usability"
+                        name="usability"
+                        min="1"
+                        max="10"
+                        step="1"
+                        placeholder="1–10"
+                        required
+                        aria-describedby="usability-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="usability-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="content"
+                        >Kaip vertinate svetainės turinį?</label
+                      >
+                      <input
+                        class="form-control"
+                        type="number"
+                        id="content"
+                        name="content"
+                        min="1"
+                        max="10"
+                        step="1"
+                        placeholder="1–10"
+                        required
+                        aria-describedby="content-error"
+                      />
+                      <small
+                        class="field-error"
+                        id="content-error"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                    <div class="col-12 form-buttons">
+                      <button
+                        class="action-btn"
+                        type="submit"
+                        id="submit-btn"
+                        disabled
+                      >
+                        Siųsti
+                      </button>
+                      <button
+                        class="action-btn secondary-btn"
+                        type="reset"
+                        id="reset-btn"
+                      >
+                        Išvalyti
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div
+                  id="form-result"
+                  class="form-result"
+                  aria-live="polite"
+                  hidden
+                >
+                  <h4>Pateikti duomenys</h4>
+                  <div id="result-data"></div>
+                  <p id="rating-average"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
+    <footer id="footer" class="footer position-relative light-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Rokas Būga</h3>
+        <p>
+          Dirbtinio intelekto sistemų studentas. Asmeninis CV ir studijų
+          projektai.
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/DriftiorasPacas" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        <div class="container">
+          <div class="copyright">
+            <span>© 2026</span>
+            <strong class="px-1 sitename">Rokas Būga</strong>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> |
+            <a href="https://bootstrapmade.com/tools/">DevTools</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      aria-label="Į viršų"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>

@@ -1,0 +1,50 @@
+ROKO BŪGOS CV SVETAINĖ – LD8–LD12
+
+PALEIDIMAS
+Atidarykite šį aplanką VS Code ir paleiskite index.html per Live Server.
+Išsaugokite savo ankstesnę GitHub saugyklą. Perkelkite šio archyvo turinį
+į jos aplanką (neperkelkite paties išorinio aplanko). GitHub Desktop
+pasirinkite Commit to main, tada Push origin.
+
+LD8 – HTML
+index.html: Patirtis (4 įrašai), Atlikti darbai (3 originalūs MATLAB
+grafikai), Paslaugos (4 × 3 lentelė, ul, ol ir įdėtinis ul).
+Paveikslai turi alt atributą ir išlaiko proporcijas.
+Papildoma: video, iframe ir audio; MP4 ir MP3 yra assets/media.
+Vaizdas: https://www.pexels.com/video/person-is-typing-using-computer-keyboard-7534244/
+Garsas: https://pixabay.com/sound-effects/quartz-clock-ticking-one-minute-253102/
+YouTube: https://www.youtube.com/watch?v=BoUVIhtqjAw
+YouTube įrašui reikia interneto ryšio ir leidimo peržiūrėti įterptą įrašą.
+
+LD9 – CSS
+assets/css/custom.css įkeliamas po main.css. Pakeista tipografija,
+mygtukai, nuorodos, tarpai, kortelės, navigacija ir progreso juostos.
+Papildoma: sąrašų pseudo-elementai, skaitiklis, įdėtinio sąrašo
+stilius, lentelės antraštė, zebra, hover, lygiavimas ir padding.
+
+LD10 – CSS animacijos
+custom.css: icon-dance, soft-glow, spinner-turn, rule-shift,
+rule-slide. Pirma animacija turi 4 būsenas, keičia transform ir color.
+Papildoma: gradient-motion bei shape-float ir shape-spin.
+
+LD11 – JavaScript forma
+index.html: kontaktų forma. custom.js: realaus laiko validacija,
+telefono formatavimas, objekto sukūrimas ir console.log,
+rezultatų atvaizdavimas, vidurkis ir Siųsti/Išvalyti mygtukai.
+Forma yra demonstracinė; ji nesiunčia duomenų į serverį.
+
+LD12 – JavaScript kompetencijų pažangos modulis
+7 įgūdžių masyvas (360 XP). Kortelės kuriamos JavaScript ir perkeliamos
+keičiant būseną, XP skaičiuojamas tik atliktiems įgūdžiams.
+4 lygiai ir rangai, progreso juosta, statistika, 4 SVG personažai.
+SVG: užduotyje nurodyto Avataaars2 generatoriaus biblioteka
+@gschoppe/avataaars (https://avataaars2.com/).
+Papildoma: localStorage būsenos ir trys automatiškai
+atrakinami arba vėl užrakinami pasiekimai.
+
+PATIKRA
+Patikrinta JavaScript formos validacija, telefono formatas, pateikimas
+ir išvalymas, XP skaičiavimai, lygiai, pasiekimai, saugykla ir būsenų
+atkūrimas. Patikrinti vietinių failų keliai ir MP4/MP3 formatai.
+Prieš atsiskaitymą per Live Server ir GitHub Pages patikrinkite
+svetainės vaizdą bei visų trijų medijos įrašų paleidimą.
